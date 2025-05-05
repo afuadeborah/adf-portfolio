@@ -18,6 +18,32 @@
     @include font-base;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+form,
+a,
+input,
+textarea,
+label,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
 h1.title-bar-text, 
 .post__container h2,
 h2.title-bar-text {
