@@ -1,0 +1,62 @@
+// Import fonts
+@mixin font-base {
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MS Sans Serif';
+    src: url('../fonts/ms-sans-serif.ttf');
+    font-weight: normal;
+    @include font-base;
+}
+
+@font-face {
+    font-family: 'MS Sans Serif';
+    src: url('../fonts/ms-sans-serif-bold.ttf');
+    font-weight: bold;
+    @include font-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+form,
+a,
+input,
+textarea,
+label,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1.title-bar-text, 
+.post__container h2,
+h2.title-bar-text {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+
