@@ -1,7 +1,7 @@
-import React from "react";
 import windowsIcon from "../assets/images/icons/windows-icon.png";
 import connectIcon from "../assets/images/icons/conn-dialup-ok.png";
 import speakerIcon from "../assets/images/icons/loudspeaker-wave.png";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
 	const time = new Date();
@@ -9,6 +9,17 @@ const Footer = () => {
 		hour: "numeric",
 		minute: "2-digit",
 	});
+
+	// Pass in the current page to the "clicked" tab
+	const location = useLocation();
+
+	const getCurrentPage = () => {
+		const path = location.pathname;
+
+		if (path === "/") return "Home";
+		// remove leading slash, capitalize first letter, rejoin the full string
+		return path.substring(1).charAt(0).toUpperCase() + path.substring(2);
+	};
 
 	return (
 		<footer className='footer d-flex justify-content-between align-items-center'>
@@ -23,7 +34,7 @@ const Footer = () => {
 						Start
 					</button>
 				</div>
-				<span className='footer__active-program'>[Pass in Page]</span>
+				<div className='footer__active-program'>{getCurrentPage()}</div>
 			</div>
 
 			<div className='status-bar-field flex-grow-0 text-uppercase footer__time-box d-flex justify-content-between'>

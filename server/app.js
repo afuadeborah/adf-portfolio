@@ -2,20 +2,41 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
+app.use(cors());
 
-app.use(cors);
+// Menu items
+const menuItems = [
+    {
+        name: "About",
+        imgUrl: "/icons/book-about.png",        
+        url: "/about"
+    },
+    {
+        name: "Work",
+        imgUrl: "/icons/briefcase.png",
+        url: "/work"
+    },
+    {
+        name: "Projects",
+        imgUrl: "/icons/projects.png",
+        url: "/projects"
+    },
+    {
+        name: "Contact",
+        imgUrl: "/icons/phone-contact.png",
+        url: "/contact"
+    },
+];
 
-const aboutRoutes = require("./routes/about");
-const workRoutes = require("./routes/work");
-const projectSkillsRoutes = require("./routes/projects");
-const contactRoutes = require("./routes/contact");
+// serve the image files
+app.use(express.static('public'));
 
-app.use("/api/about", aboutRoutes);
-app.use("/api/work", workRoutes);
-app.use("/api/projects", projectSkillsRoutes);
-app.use("/api/contact", contactRoutes);
+// GET menu items
+app.get('/api/menu-items', (req, res) => {
+    res.json(menuItems);
+});
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server running at http://localhost:${PORT}`)
 });
