@@ -1,0 +1,16 @@
+.about__window-container {
+    overflow-y: scroll;
+    max-height: 620px;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p:not(.about__pronounciation) {
+        font-size: 1rem;
+    }
+}
+
+.about__image {
+    max-height: 500px;
+}
