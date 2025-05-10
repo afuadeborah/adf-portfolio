@@ -9,8 +9,26 @@
     p:not(.about__pronounciation) {
         font-size: 1rem;
     }
+
+    .about__pronounciation {
+        font-weight: 700;
+    }
 }
 
 .about__image {
     max-height: 500px;
+}
+
+.about__copy-container,
+.about__window-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about__copy-container {
+    font-size: 1.2rem;
+}
+
+.about__social {
+    height: 50px;
+    width: 50px;
 }

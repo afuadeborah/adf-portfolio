@@ -5,15 +5,10 @@ html {
 
 body {
     background-color: $bg-color;
+    // overwriting centering from 98.css
+    place-items: unset;
 }
 
-button {
-    cursor: pointer;
-}
-
-p {
-    margin: 0;
-}
 
 #root {
     width: 100%;
@@ -24,19 +19,28 @@ p {
     max-width: 800px;
 }
 
+button,
+.window__icon {
+    cursor: pointer;
+}
+
 .status-bar {
     background-color: $gray;
 }
 
 .window__icon-flex-container {
-    margin: 24px 24px 0 0;
-    padding: 24px 24px 0 0;
+    margin: 0 0 24px 24px;
+    padding-top: 24px;
+}
 
-    .window__icon {
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-    }
+.window__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.right-icon-container {
+    margin: 24px 24px 0 0;
+    padding-bottom: 24px;
 }
 
 .footer {

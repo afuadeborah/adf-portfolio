@@ -15,8 +15,11 @@ const Menu = () => {
 		const getMenuItems = async () => {
 			try {
 				const items = await fetchMenuItems();
-				console.log(items);
-				setMenuItems(items);
+				const mainMenu = items.filter(
+					(item) => item.position === "LEFT"
+				);
+
+				setMenuItems(mainMenu);
 				setLoading(false);
 			} catch (error) {
 				setError("Unable to load menu items.");
@@ -30,11 +33,7 @@ const Menu = () => {
 	return (
 		<div className='d-none d-md-flex flex-column flex-shrink-1 window__icon-flex-container'>
 			{menuItems.map((item, index) => (
-				<Link
-					key={index}
-					to={item.url}
-					className='text-center text-right mb-4'
-				>
+				<Link key={index} to={item.url} className='text-center mb-3'>
 					<img
 						src={`${serverUrl}${item.imgUrl}`}
 						className='window__icon'
