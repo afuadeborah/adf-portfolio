@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
 	return (
-		<div className='window m-4'>
+		<div className='window mx-4 my-2'>
 			<div className='title-bar'>
 				<h1 className='title-bar-text'>
 					<img src={aboutIcon} alt='About icon' />

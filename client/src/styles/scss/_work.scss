@@ -1,0 +1,26 @@
+.work__window {
+    min-width: 600px;
+}
+
+
+// 98.css uses link (a) elements to trigger each tab, I wanted to use buttons for better control and accessibility so I'm stripping the default button styling on each tab
+menu[role=tablist]>li {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: inset -1px 0 #0a0a0a, inset 1px 1px #dfdfdf, inset -2px 0 grey, inset 2px 2px #fff;
+    z-index: 1;
+    background: $gray;
+        
+    button {
+        color: #222;
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 6px 20px;
+        padding: 0;
+        text-decoration: none;
+        border: none;
+        box-shadow: unset;
+        min-width: unset;
+        min-height: unset;
+    }
+} 
