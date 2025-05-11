@@ -9,6 +9,8 @@ export interface WorkTabContent {
     title: string;
     company: string;
     imgUrl: string;
+    date: string;
+    location: string;
     points: string[];
     id: string;
     skills: string[];

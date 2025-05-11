@@ -1,7 +1,50 @@
 .work__window {
-    min-width: 600px;
-}
+    // width: 650px;
+    // TODO: add media query
 
+    .work__image-container {
+        margin-right: 24px;
+    }
+
+    .work__content-container {
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .work__location {
+            font-size: 1rem;
+        }
+
+    }
+
+    .work__experience-container li {
+        font-size: 1rem;
+    }
+
+    summary {
+        font-weight: 700;
+    }
+
+    ul.tree-view li {
+        font-size: 0.8rem;
+    }
+
+    ul.tree-view details>summary:before {
+        line-height: 11px;
+        height: 15px;
+        width: 15px;
+    }
+
+    ul.tree-view details[open]>summary:before {
+        content: "‒"
+    }
+}
 
 // 98.css uses link (a) elements to trigger each tab, I wanted to use buttons for better control and accessibility so I'm stripping the default button styling on each tab
 menu[role=tablist]>li {
@@ -13,7 +56,6 @@ menu[role=tablist]>li {
         
     button {
         color: #222;
-        font-weight: 700;
         font-size: 1rem;
         margin: 6px 20px;
         padding: 0;

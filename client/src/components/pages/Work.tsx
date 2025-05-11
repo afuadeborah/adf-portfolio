@@ -9,6 +9,9 @@ const Work = () => {
 	const [loading, setLoading] = useState<boolean>(true);
 	const [error, setError] = useState<string | null>(null);
 
+	// TODO: Update this before deploying
+	const serverUrl = "http://localhost:5000";
+
 	useEffect(() => {
 		const getTabContent = async () => {
 			try {
@@ -58,12 +61,66 @@ const Work = () => {
 						</li>
 					))}
 			</menu>
+
 			<div className='window' role='tabpanel'>
-				<div className='window-body'></div>
+				<div className='window-body'>
+					{activeTabContent && (
+						<div className='work__content-container'>
+							<div className='d-flex'>
+								<div className='work__image-container mr-4'>
+									<img
+										src={`${serverUrl}${activeTabContent.imgUrl}`}
+										width={200}
+										height={200}
+										alt={`${activeTabContent.company} logo`}
+									/>
+								</div>
+
+								<div className='work__experience-container p-2'>
+									<h1 className='work__company-title'>
+										{activeTabContent.company}
+									</h1>
+									<h2 className='my-3'>
+										{activeTabContent.title}
+									</h2>
+									<p className='work__location'>
+										{activeTabContent.location}
+									</p>
+									<span className='text-uppercase'>
+										{activeTabContent.date}
+									</span>
+								</div>
+							</div>
+
+							<ul className='work__experience-list tree-view mt-3'>
+								<details open className='mt-2'>
+									<summary>What did I get up to?</summary>
+									<ul>
+										{activeTabContent.points.map(
+											(point) => (
+												<li>{point}</li>
+											)
+										)}
+									</ul>
+								</details>
+
+								<details open className='mt-4'>
+									<summary>Top Skills</summary>
+									<ul>
+										{activeTabContent.skills.map(
+											(point) => (
+												<li>{point}</li>
+											)
+										)}
+									</ul>
+								</details>
+							</ul>
+						</div>
+					)}
+				</div>
 			</div>
 		</div>
 	);
 };
 
 export default Work;
-// flex-grow-1 m-4
