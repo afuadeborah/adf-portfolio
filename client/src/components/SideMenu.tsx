@@ -52,7 +52,9 @@ const SideMenu = () => {
 							className='window__icon'
 							alt={`${item.name} icon`}
 						/>
-						<p className='text-white mt-2'>{item.name}</p>
+						<p className='window__icon-text text-white mt-2'>
+							{item.name}
+						</p>
 					</Link>
 				);
 			})}{" "}

@@ -1,0 +1,60 @@
+.work__window {
+    .work__image-container {
+        margin-right: 24px;
+    }
+
+    .work__content-container {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .work__location {
+            font-size: 1rem;
+        }
+
+    }
+
+    .work__content-container h1,
+    summary {
+        font-weight: 700;
+    }
+
+    ul.tree-view li {
+        font-size: 0.8rem;
+    }
+
+    ul.tree-view details>summary:before {
+        line-height: 11px;
+        height: 15px;
+        width: 15px;
+    }
+
+    ul.tree-view details[open]>summary:before {
+        content: "‒"
+    }
+}
+
+// 98.css uses link (a) elements to trigger each tab, I wanted to use buttons for better control and accessibility so I'm stripping the default button styling on each tab
+menu[role=tablist]>li {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: inset -1px 0 #0a0a0a, inset 1px 1px #dfdfdf, inset -2px 0 grey, inset 2px 2px #fff;
+    z-index: 1;
+    background: $gray;
+        
+    button {
+        color: #222;
+        font-size: 0.75rem;
+        margin: 6px 20px;
+        padding: 0;
+        text-decoration: none;
+        border: none;
+        box-shadow: unset;
+        min-width: unset;
+        min-height: unset;
+    }
+} 
