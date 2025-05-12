@@ -22,6 +22,8 @@ Thanks for stopping by, you'll be first to know once I have this site up and run
 
 ![About](./client/src/assets/images/dev-about-screenshot.png)
 
+![Work](./client/src/assets/images/dev-work-screenshot.png)
+
 ## Stack
 
 **Frontend**

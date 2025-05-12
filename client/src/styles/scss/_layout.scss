@@ -15,6 +15,7 @@ body {
     min-height: 100%;
 }
 
+// Window setup
 .window {
     max-width: 800px;
 }
@@ -22,6 +23,10 @@ body {
 button,
 .window__icon {
     cursor: pointer;
+}
+
+.title-bar img {
+    margin-right: 8px;
 }
 
 .status-bar {
@@ -38,11 +43,17 @@ button,
     height: 40px;
 }
 
+.window__icon-text {
+    font-family: "MS Sans Serif", sans-serif;
+}
+
+// Menu setup
 .right-icon-container {
     margin: 24px 24px 0 0;
     padding-bottom: 24px;
 }
 
+// Footer
 .footer {
     position: fixed;
     bottom: 0;
@@ -91,9 +102,5 @@ button,
 .title-bar img {
     width: 16px;
     height: 16px;
-}
-
-.title-bar img {
-    margin-right: 8px;
 }
 

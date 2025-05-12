@@ -37,8 +37,7 @@ const Welcome = () => {
 
 			<div className='mt-5 mt-md-3'>
 				<p className='welcome__text'>
-					Click the <span className='text-white'>ABOUT</span> icon to
-					begin.
+					Click <span className='text-white'>ABOUT</span> to begin.
 				</p>
 			</div>
 		</div>

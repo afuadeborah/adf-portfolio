@@ -1,14 +1,14 @@
-.welcome__text-container {
-    margin-left: 16px;
+.welcome__window {
+    max-width: 600px;
+    min-height: 500px;
+    
+    .welcome__text-container {
+        margin-left: 16px;
+    }
 }
 
 .welcome__text {
     font-size: 1rem;
-}
-
-.welcome__window {
-    max-width: 600px;
-    min-height: 500px;
 }
 
 .welcome__text,

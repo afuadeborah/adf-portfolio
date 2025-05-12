@@ -17,7 +17,7 @@ const About = () => {
 				</div>
 			</div>
 
-			<div className='about__window-container d-flex flex-column bg-white mb-3 p-3'>
+			<div className='about__window-container d-flex flex-column flex-md-row bg-white mb-3 p-3'>
 				<div className='d-flex flex-column justify-content-around align-items-center'>
 					<div>
 						<img
@@ -68,7 +68,7 @@ const About = () => {
 							to='https://github.com/afuadeborah'
 							target='_blank'
 							rel='noopener noreferrer'
-							className='about__social-link text-center text-black mb-5'
+							className='about__social-link text-center text-black'
 							aria-hidden='true'
 							title="Go to Afua's Github"
 						>
