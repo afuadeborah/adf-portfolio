@@ -1,15 +1,10 @@
 .work__window {
-    // width: 650px;
-    // TODO: add media query
-
     .work__image-container {
         margin-right: 24px;
     }
 
     .work__content-container {
-
         h1 {
-            font-weight: 700;
             font-size: 2rem;
         }
 
@@ -23,10 +18,7 @@
 
     }
 
-    .work__experience-container li {
-        font-size: 1rem;
-    }
-
+    .work__content-container h1,
     summary {
         font-weight: 700;
     }
@@ -56,7 +48,7 @@ menu[role=tablist]>li {
         
     button {
         color: #222;
-        font-size: 1rem;
+        font-size: 0.75rem;
         margin: 6px 20px;
         padding: 0;
         text-decoration: none;
