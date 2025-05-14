@@ -1,34 +1,34 @@
 .about__window-container {
-    overflow-y: scroll;
-    max-height: 570px;
+  overflow-y: scroll;
+  max-height: 570px;
 
-    h2 {
-        font-size: 2rem;
-    }
+  h2 {
+    font-size: 2rem;
+  }
 
-    p:not(.about__pronounciation) {
-        font-size: 0.8rem;
-    }
+  p:not(.about__pronounciation) {
+    font-size: 0.8rem;
+  }
 
-    .about__pronounciation {
-        font-weight: 700;
-    }
+  .about__pronounciation {
+    font-weight: 700;
+  }
 
-    .about__image {
-        max-height: 500px;
-    }
-    
-    .about__copy-container {
-        font-size: 1.2rem;
-        line-height: 1.7;
-    }
-    
-    .about__social {
-        height: 50px;
-        width: 50px;
-    
-        .about__link {
-            font-size: 1rem;
-        }
-    }
+  .about__image {
+    max-height: 500px;
+  }
+  
+  .about__copy-container {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  
+  .about__social {
+    height: 50px;
+    width: 50px;
+  
+      .about__link {
+        font-size: 1rem;
+      }
+  }
 }

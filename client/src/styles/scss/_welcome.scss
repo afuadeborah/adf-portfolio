@@ -1,60 +1,60 @@
 .welcome__window {
-    max-width: 600px;
-    min-height: 500px;
-    
-    .welcome__text-container {
-        margin-left: 16px;
-    }
+  max-width: 600px;
+  min-height: 500px;
+  
+  .welcome__text-container {
+    margin-left: 16px;
+  }
 }
 
 .welcome__text {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .welcome__text,
 h1.welcome__heading-one {
-    color: $darker-gray;
+  color: $darker-gray;
 }
 
 .welcome__text,
 h1.welcome__heading-one,
 .welcome__download-link {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 // Typing animation effect
 h1.welcome__heading-one {
-    font-size: 1.75rem;
-    display: inline-block;
-    border-right: 0.7rem solid $darker-gray;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-right: auto;
-    animation: typing 5s steps(48, end),
-    caret-animation 0.9s step-end infinite;
+  font-size: 1.75rem;
+  display: inline-block;
+  border-right: 0.7rem solid $darker-gray;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: auto;
+  animation: typing 5s steps(48, end),
+  caret-animation 0.9s step-end infinite;
 }
 
 // Credit to Rishita Raha's Typing Animation codepen https://codepen.io/risottttttto/pen/ExqQNNZ
 @keyframes caret-animation {
-    0% {
-        border-color: transparent;
-    }
+  0% {
+    border-color: transparent;
+  }
 
-    50% {
-        border-color: $darker-gray;
-    }
+  50% {
+    border-color: $darker-gray;
+  }
 
-    100% {
-        border-color: transparent;
-    }
+  100% {
+    border-color: transparent;
+  }
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 40%;
-    }
+  to {
+    width: 40%;
+  }
 }

@@ -1,21 +1,21 @@
 // Import fonts
 @mixin font-base {
-    font-style: normal;
-    font-display: swap;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'MS Sans Serif';
-    src: url('../../../public/fonts/ms-sans-serif.ttf');
-    font-weight: normal;
-    @include font-base;
+  font-family: 'MS Sans Serif';
+  src: url('/fonts/ms-sans-serif.ttf');
+  font-weight: normal;
+  @include font-base;
 }
 
 @font-face {
-    font-family: 'MS Sans Serif';
-    src: url('../../../public/fonts/ms-sans-serif-bold.ttf');
-    font-weight: bold;
-    @include font-base;
+  font-family: 'MS Sans Serif';
+  src: url('/fonts/ms-sans-serif-bold.ttf');
+  font-weight: bold;
+  @include font-base;
 }
 
 h1,
@@ -32,26 +32,26 @@ textarea,
 label,
 ul,
 li {
-    margin: 0;
-    padding: 0;
-    border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 ul,
 li,
 a {
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 h1.title-bar-text, 
 .post__container h2,
 h2.title-bar-text {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
