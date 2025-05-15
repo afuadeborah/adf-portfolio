@@ -1,0 +1,38 @@
+.projects__window {
+  .projects__content-container {
+    gap: 20px;
+  }
+  
+  .projects__active-tab-container {
+    flex-basis: 45%;
+    // media query
+    padding: 10px;
+    box-shadow: inset -1px -1px 0px $black, inset 1px 1px 0px $white, inset -2px -2px 0px $darker-gray, inset 2px 2px 0px $gray;
+    min-height: 475px;
+
+    .project__title {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  .projects__info-container {
+    font-size: 0.8rem;
+  }
+
+  .projects__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 16px;
+  }
+
+  ul.tree-view details>summary:before {
+    line-height: 11px;
+    height: 15px;
+    width: 15px;
+  }
+
+  ul.tree-view details[open]>summary:before {
+    content: "‒"
+  }
+}
