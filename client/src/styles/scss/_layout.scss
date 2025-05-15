@@ -1,106 +1,109 @@
 html {
-    overflow-x: auto;
-    white-space: wrap;
+  overflow-x: auto;
+  white-space: wrap;
 }
 
 body {
-    background-color: $bg-color;
-    // overwriting centering from 98.css
-    place-items: unset;
+  background-color: $bg-color;
+  // overwriting centering from 98.css
+  place-items: unset;
 }
 
+summary {
+  font-weight: 700;
+}
 
 #root {
-    width: 100%;
-    min-height: 100%;
+  width: 100%;
+  min-height: 100%;
 }
 
 // Window setup
 .window {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 button,
 .window__icon {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .title-bar img {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .status-bar {
-    background-color: $gray;
+  background-color: $gray;
 }
 
 .window__icon-flex-container {
-    margin: 0 0 24px 24px;
-    padding-top: 24px;
+  margin: 0 0 24px 24px;
+  padding-top: 24px;
 }
 
 .window__icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .window__icon-text {
-    font-family: "MS Sans Serif", sans-serif;
+  font-family: "MS Sans Serif", sans-serif;
 }
 
 // Menu setup
 .right-icon-container {
-    margin: 24px 24px 0 0;
-    padding-bottom: 24px;
+  margin: 24px 24px 0 0;
+  padding-bottom: 24px;
 }
 
 // Footer
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    padding: 2px;
-    box-shadow: inset 1px 0 $white;
-    display: block;
-    background-color: $gray;
-    border-top: 1px solid #f4f4f4;
-    border-bottom: 1px solid #4e4e4e;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2px;
+  box-shadow: inset 1px 0 $white;
+  display: block;
+  background-color: $gray;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #4e4e4e;
 
-    .footer__start-button {
-        font-weight: bold;
-        min-width: 59px;
-        margin-right: 1px;
-        height: 20px;
-    }
+  .footer__start-button {
+    font-weight: bold;
+    min-width: 59px;
+    margin-right: 1px;
+    height: 20px;
+  }
 
-    .footer__time-box {
-        text-align: right;
-        min-width: 110px;
-    }
+  .footer__time-box {
+    text-align: right;
+    min-width: 110px;
+  }
 
-    .footer__active-program {
-        padding: 2px 10px 0 6px;
-        margin-left: 5px;
-        border-top: 1px solid $black;
-        border-left: 1px solid $black;
-        box-shadow: inset 1px 1px grey;
-        background-image: url(../../assets/images/icons/sprite.png);
-        min-width: 160px;
-    }
+  .footer__active-program {
+    padding: 2px 10px 0 6px;
+    margin-left: 5px;
+    border-top: 1px solid $black;
+    border-left: 1px solid $black;
+    box-shadow: inset 1px 1px grey;
+    background-image: url(../../assets/images/icons/sprite.png);
+    min-width: 160px;
+  }
 
-    .start__icon {
-        margin-right: 4px;
-    }
+  .start__icon {
+    margin-right: 4px;
+  }
 
-    .footer__icon {
-        margin-right: 10px;
-    }
+  .footer__icon {
+    margin-right: 10px;
+  }
 }
 
 .footer .footer__icon img,
 .title-bar img {
-    width: 16px;
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
